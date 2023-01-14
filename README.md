@@ -33,3 +33,9 @@ model = DecisionTreeRegressor(random_state=1)
 
 model.fit(X,Y)
 ```
+
+`Step 5 - Make predictions`
+```
+print(X.head(7))
+model.predict(X.head(7))
+```
