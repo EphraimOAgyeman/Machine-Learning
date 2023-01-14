@@ -8,10 +8,13 @@ import pandas as pd
 df = pd.read_csv('datasetName.csv')
 df.head()
 ```
-
-`Step 2 - Specify your prediction target`
+ 
+`Step 2 - Specify your prediction target - Y`
 ```
-# Every dataset has one particular outcome you are looking to attain. Single it out with a "Y"
-
+Y = df.columnName
+```
+ 
+`Step 3 - Specify your features - X`
+```
 Y = df.columnName
 ```
