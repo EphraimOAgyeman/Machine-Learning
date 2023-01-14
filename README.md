@@ -14,7 +14,22 @@ df.head()
 Y = df.columnName
 ```
  
-`Step 3 - Specify your features - X`
+`Step 3 - Specify your prediction features - X`
 ```
-Y = df.columnName
+# Starts by grouping all needed columns in a list
+
+features_list = ['columnName1','columnName2','columnName3','columnName4','columnNamen']
+X = df[features_list]
+
+print(X.head())
+```
+
+`Step 4 - Specify your model and fit/train it`
+```
+from sklearn.tree import DecisionTreeRegressor
+
+#For model reproducibility, set a numeric value for random_state when specifying the model
+model = DecisionTreeRegressor(random_state=1)
+
+model.fit(X,Y)
 ```
